@@ -1,0 +1,27 @@
+{
+  "name": "learning-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-navbar-dropdown": "^1.4.3",
+    "react-navigation-drawer": "^2.7.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^0.9.5",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": " react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
