@@ -4,6 +4,9 @@ import PropTypes from 'prop-types'
 export default class Form extends Component {
     constructor() {
         super();
+        // this.state={
+
+        // }
     }
     state = {
         name: '',
@@ -16,6 +19,7 @@ export default class Form extends Component {
     render() {
         return (
             <div>
+                {console.log("form render methode work")}
                 <h1>form</h1>
                 <form>
                     <input type="text" /><br />

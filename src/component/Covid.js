@@ -30,7 +30,7 @@ const Covid = () => {
             <button onClick={() => getData()}>get covid data</button>
             <ul>
                 {data.hits.map(item => (
-                    <li >
+                    <li key={item.id}>
                         {item.title}
                     </li>
                 ))}
