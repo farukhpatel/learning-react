@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-
+import BrowserXY from './BrowserXY'
 
 
 const Covid = () => {
@@ -26,6 +26,7 @@ const Covid = () => {
 
     return (
         <div>
+            <BrowserXY></BrowserXY>
             <h1>covid -19 </h1>
             <button onClick={() => getData()}>get covid data</button>
             <ul>
