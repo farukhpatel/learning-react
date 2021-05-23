@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 const Covid = () => {
-    const [data, setData] = useState({ hits: [] });
+    const [data, setData] = useState([]);
     console.log("covid-19")
 
     const getData = async () => {
@@ -12,8 +12,8 @@ const Covid = () => {
         const result = await axios(
             'https://hn.algolia.com/api/v1/search?query=redux',
         );
-        console.log(result.data)
-        setData(result.data);
+        console.log(result.data.hits)
+        setData(result.data.hits);
     }
 
     // useEffect(async () => {
@@ -29,8 +29,8 @@ const Covid = () => {
             <h1>covid -19 </h1>
             <button onClick={() => getData()}>get covid data</button>
             <ul>
-                {data.hits.map(item => (
-                    <li key={item.id}>
+                {data.map(item => (
+                    <li key={item.created_at}>
                         {item.title}
                     </li>
                 ))}

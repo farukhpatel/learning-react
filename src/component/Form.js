@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import axios from 'axios'
 export default class Form extends Component {
     constructor() {
         super();
@@ -35,8 +35,11 @@ export default class Form extends Component {
         })
     }
     submitt = (event) => {
+        const article="jjjj"
+        axios.post('https://reqres.in/api/articles',article).then(res=>console.log(res)).catch(err=>console.log(err))
         alert('A name was submitted: ');
         event.preventDefault();
+
         
     }
 
@@ -46,7 +49,7 @@ export default class Form extends Component {
             <div>
                 
                 <h1>form</h1>
-                <form action="/form.php"methode="POST"onSubmit={()=>{this.submitt()}}>
+                <form onSubmit={()=>{this.submitt()}}>
                     <input type="text" value={name}   name="name" onChange={this.change}/ ><br />
                     <input type="text"  value={add} name="add" onChange={this.changeb}/><br />
                     <button type="submit">Submit form</button>
