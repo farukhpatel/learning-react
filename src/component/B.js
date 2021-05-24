@@ -7,7 +7,7 @@ const B=(props)=>{
             <h1>B componenet</h1>
             {console.log(MyContext)}
             <MyContext.Consumer>
-                {data=><h1>{`my name is ${data.name} and roll number is ${data.roll} ${JSON.stringify(data)}` }</h1>}
+                {data=><h1>{`my name is ${data.name} and roll number is ${data.roll}, and sem is${data.propsData.hosem.semester} ${data.propsData.hosem.year}${JSON.stringify(data)} ` }</h1>}
             </MyContext.Consumer>
             {/* <h1>B Component {props.data.name} and roll number {props.data.roll}</h1> */}
             {/* <C data={props.data}></C> */}
