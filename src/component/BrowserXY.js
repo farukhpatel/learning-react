@@ -17,9 +17,9 @@ const BrowserXY=()=>{
 
     }
     useEffect(()=>{
-        console.log("useEffect")
+        console.log("useEffect");
         window.addEventListener('mousemove',mouseXY)
-    }),[];
+    }),[];  //[] this is call only one time when componnet is rendered not call when state is update
     return(
         <div>
             <h1>Browser X:-{set.X}</h1>

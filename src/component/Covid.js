@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import BrowserXY from './BrowserXY'
-
+import A from './A'
+import B from './B'
+import C from './C'
 
 const Covid = () => {
     const [data, setData] = useState([]);
@@ -26,7 +28,7 @@ const Covid = () => {
 
     return (
         <div>
-            <BrowserXY></BrowserXY>
+            {/* <BrowserXY></BrowserXY> */}
             <h1>covid -19 </h1>
             <button onClick={() => getData()}>get covid data</button>
             <ul>
@@ -36,6 +38,10 @@ const Covid = () => {
                     </li>
                 ))}
             </ul>
+            <A></A>
+            {/* <B></B>
+            <C></C> */}
+
         </div>
     );
 }
