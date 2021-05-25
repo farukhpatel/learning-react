@@ -9,7 +9,7 @@ import Hero from './component/Hero'
 
 import styled from 'styled-components'
 import './component/new.css'
-import Form from './component/Form';
+import Form from './component/Form1';
 import CHeader from './component/CHeader';
 class App extends Component {
   render() {
