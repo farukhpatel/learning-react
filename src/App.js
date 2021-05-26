@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Login from './component/Login'
-import Register from './component/Register'
-import Covid from './component/Covid'
-import State from './component/State'
-import Stylesheet from './component/Stylesheet'
-import Hero from './component/Hero'
-
+import Register from './component/Register';
+import Covid from './component/Covid';
+import State from './component/State';
+import Stylesheet from './component/Stylesheet';
+import Hero from './component/Hero';
+import ToDo from './component/ToDo';
 import styled from 'styled-components'
 import './component/new.css'
 import Form from './component/Form1';
@@ -18,6 +18,9 @@ class App extends Component {
       <Router>
         <div className="navbar">
           <ul>
+          <li>
+              <Link to='/todo' > To Do List </Link>
+            </li>
             <li>
               <Link to='/r' > Register </Link>
             </li>
@@ -44,7 +47,7 @@ class App extends Component {
         </div>
 
         < Switch >
-
+          <Route path='/todo' > <ToDo /></Route >
           <Route path='/login' > <Login /></Route >
           <Route path='/r' > <Register /></Route >
           <Route path='/hero' > <Hero /></Route >

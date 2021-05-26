@@ -3,18 +3,13 @@ const Form1=()=>{
     const [formData,SetFormData]=useState({
         fname:'',lname:'',email:''
     })
-    
     const onClicks=(e)=>{
-        
         console.log(e.target.name)
         console.log(e.target.value)
         let value = e.target.value;
         SetFormData({...formData,[e.target.name]:e.target.value})
         //e.preventDefault()
         //e.stopPropagation()
-        console.log(FormData)
-    
-       
     }
     const onSubmits=(e)=>{
         console.log("submit")
